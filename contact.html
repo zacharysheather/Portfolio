@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Zachary Sheather's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/
+        html5shiv.min.js">
+        </script >
+        <![endif]-->
+        <script type="text/javascript">
+            function welcome() {
+                alert("Fill out the form to contact Zachary Sheather regarding any questions that" +
+                ' ' + "you may have regarding either website or game development");
+            }
+            function validateForm() { 
+                if(document.forms[0].firstname.value == "") {
+                alert("The first name field cannot be empty");
+                return false;
+            }
+            if(document.forms[0].lastname.value == "") {
+                alert("The last name field cannot be empty");
+                return false;
+            }
+            if(document.forms[0].email.value != "@") {
+                alert("There must be an @ in this field");
+                return false;
+            }
+            alert("All required fields filled in");
+                return true;
+            }
+        </script>
+    </head>
+    <body onload = "welcome();">
+        <div id="container">
+            <header>
+                <img src="/images/logo.png" alt="Zachary Sheather" 
+                style="margin-right:auto;margin-left:auto;display:block;text-align:center;
+                width:834px;height:168px;">
+                <nav>
+                        <div class="navlink"><a href="index.html">Home</a></div>
+                        <div class="navlink"><a href="design.html">Design</a></div>
+                        <div class="navlink"><a href="skills.html">Skills</a></div>
+                        <div class="navlink"><a href="resume.html">Resume</a></div>
+                        <div class="navlink"><a href="contact.html">Contact</a></div>
+                </nav>
+            </header>
+            <div id="contentField">
+				<main class="formMain">
+					<span class="heading"><h2>Contact Me</h2></span>
+					<form method="post" action="" onsubmit="return validateForm();">
+					<p><table class="form">
+						<label>First Name:</label> <span><input type="text" name="firstname" 
+						id="firstname" size="60">*</span><br/><br/>
+						<label>Last Name:</label> <span><input type="text" name="lastname" 
+						id="lastname" size="60">*</span><br/><br/>
+						<label>Email Address:</label> <span><input type="email" name="emailaddress" 
+						id="emailaddress" size="60">*</span><br/>
+						What relates best to your concern?<br/><br/>
+                        <input type="checkbox" name="websiteDesign" id="websiteDesign" value="yes">
+                        Website Design
+                        <input type="checkbox" name="gameDesign" id="gameDesign" value="yes">
+                        Game Design
+                        <input type="checkbox" name="programming" id="programming" value="yes">
+                        Programming
+                        <input type="checkbox" name="logo" id="logo" value="yes">
+                        Graphic Design
+                        <br/><br/>
+						Please explain your concern in further detail in the box below.<br/>
+                        <textarea name="commentbox" id="commentbox" cols="50" rows="3"></textarea>
+                        <br/>
+						<input type="submit" name="submitresponse" id="submitresponse"> &nbsp;
+						<input type="reset" name="resetresponse" id="resetresponse">
+					</table>
+					</form></p>
+				</main>
+            </div>
+            <footer>
+                <span id="footertext">Zachary Sheather Portfolio &copy; 2020</span>
+            </footer>
+        </div>
+    </body>
+</html>
