@@ -11,25 +11,8 @@
         <![endif]-->
         <script type="text/javascript">
             function welcome() {
-                alert("Fill out the form to contact Zachary Sheather regarding any questions that" +
-                ' ' + "you may have regarding either website or game development");
-            }
-            function validateForm() { 
-                if(document.forms[0].firstname.value == "") {
-                alert("The first name field cannot be empty");
-                return false;
-            }
-            if(document.forms[0].lastname.value == "") {
-                alert("The last name field cannot be empty");
-                return false;
-            }
-            if(document.forms[0].email.value != "@") {
-                alert("There must be an @ in this field");
-                return false;
-            }
-            alert("All required fields filled in");
-                return true;
-            }
+                alert("Please contact me via email or phone call if you have any work available.");
+	    }
         </script>
     </head>
     <body onload = "welcome();">
@@ -47,34 +30,16 @@
                 </nav>
             </header>
             <div id="contentField">
-				<main class="formMain">
-					<span class="heading"><h2>Contact Me</h2></span>
-					<form method="post" action="" onsubmit="return validateForm();">
-					<p><table class="form">
-						<label>First Name:</label> <span><input type="text" name="firstname" 
-						id="firstname" size="60">*</span><br/><br/>
-						<label>Last Name:</label> <span><input type="text" name="lastname" 
-						id="lastname" size="60">*</span><br/><br/>
-						<label>Email Address:</label> <span><input type="email" name="emailaddress" 
-						id="emailaddress" size="60">*</span><br/>
-						What relates best to your concern?<br/><br/>
-                        <input type="checkbox" name="websiteDesign" id="websiteDesign" value="yes">
-                        Website Design
-                        <input type="checkbox" name="gameDesign" id="gameDesign" value="yes">
-                        Game Design
-                        <input type="checkbox" name="programming" id="programming" value="yes">
-                        Programming
-                        <input type="checkbox" name="logo" id="logo" value="yes">
-                        Graphic Design
-                        <br/><br/>
-						Please explain your concern in further detail in the box below.<br/>
-                        <textarea name="commentbox" id="commentbox" cols="50" rows="3"></textarea>
-                        <br/>
-						<input type="submit" name="submitresponse" id="submitresponse"> &nbsp;
-						<input type="reset" name="resetresponse" id="resetresponse">
-					</table>
-					</form></p>
-				</main>
+   	    	<main class="centerMain">
+			<span class="heading"><h2>Contact</h2></span>
+				<p>If you would like to get in contact with me, this can be achieved through interacting 
+				with the links below.</p>
+			<ul>
+				<li><a href="mailto:zacharysheather95@gmail.com">Click here to email me</li>
+				<li><a href="tel:+61-416-506-820">Call me @ (+61) 0416506820</li>
+			</ul>
+			<br/>
+		</main>
             </div>
             <footer>
                 <span id="footertext">Zachary Sheather Portfolio &copy; 2020</span>
