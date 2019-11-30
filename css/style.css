@@ -101,11 +101,11 @@ nav{
     display:inline-block;
     float:none;
     width:auto;
-    margin:15px;
+    margin:5px;
 }
 
 .navlink a{
-    padding:15px;
+    padding:7px;
     font-family:Verdana, Geneva, sans-serif;
     color:#ffffff;
 }
@@ -207,7 +207,7 @@ footer{
     height:35px;
     bottom:0px;
     text-align:center;
-    opacity:.7;
+    opacity:.8;
     z-index:9999;
 }
 
